@@ -10,7 +10,7 @@ args: input_path (str): caminho da pasta com os arquivos
 
 return: lista de dataframes
 """
-path = "data/input"
+
 
 def extranindo_dados_excel(path: str) -> List[pd.DataFrame]:
     arquivos = glob.glob(os.path.join(path, "*.xlsx"))
@@ -23,5 +23,6 @@ def extranindo_dados_excel(path: str) -> List[pd.DataFrame]:
     return lista_df 
 
 if __name__ == "__main__":
+    path = "data/input"
     lista = extranindo_dados_excel(path)
     print(lista)
