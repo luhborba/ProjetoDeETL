@@ -11,9 +11,11 @@ def extranindo_dados_excel(path: str) -> List[pd.DataFrame]:
     """
     Função para ler arquivos de uma pasta data/input e retornar uma lista de dataframes.
 
-    args: input_path (str): caminho da pasta com os arquivos
+    Args:
+        Input_path (str): caminho da pasta com os arquivos
 
-    return: lista de dataframes
+    Return:
+        lista de dataframes
     """
     arquivos = glob.glob(os.path.join(path, "*.xlsx"))
 
