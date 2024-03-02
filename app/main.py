@@ -1,6 +1,8 @@
+"""Script que ira iniciar a rotina de ETL."""
+
 from pipeline.extract import extranindo_dados_excel
-from pipeline.trasform import concatenar_df
 from pipeline.load import load_excel
+from pipeline.trasform import concatenar_df
 
 if __name__ == "__main__":
     path = "data/input"
