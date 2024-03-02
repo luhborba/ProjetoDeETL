@@ -1,3 +1,4 @@
+"""Criando modulo para carregar arquivos."""
 import os
 
 import pandas as pd
@@ -5,7 +6,7 @@ import pandas as pd
 
 def load_excel(data_frame: pd.DataFrame, output_path: str, file_name: str) -> str:
     """
-    Receber um data frame e salvar como um excel
+    Receber um data frame e salvar como um excel.
 
     args:
     data_fame (dataframe): dataframe a ser salvo

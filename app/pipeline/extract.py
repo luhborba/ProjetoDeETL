@@ -1,3 +1,4 @@
+"""Modulo para extrair dados."""
 import glob  # biblioteca para listar arquivos
 import os  # biblioteca para manipular arquivos e pastas
 from typing import List
