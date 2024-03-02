@@ -2,8 +2,8 @@ import pandas as pd
 
 from app.pipeline.trasform import concatenar_df
 
-df_1 = pd.DataFrame({'a': [1, 2, 3], 'b': [4, 5, 6]})
-df_2 = pd.DataFrame({'a': [7, 8, 9], 'b': [10, 11, 12]})
+df_1 = pd.DataFrame({"a": [1, 2, 3], "b": [4, 5, 6]})
+df_2 = pd.DataFrame({"a": [7, 8, 9], "b": [10, 11, 12]})
 
 
 def testar_a_concatenacao_df():
@@ -19,7 +19,7 @@ def testar_a_concatenacao_df():
     assert df.shape == (
         6,
         2,
-    )   # Testando se o dataframe foi concatenado corretamente através do shape
+    )  # Testando se o dataframe foi concatenado corretamente através do shape
     assert data_frame.equals(
         df
-    )   # Testando se os dataframes são igual, tanto no pd.concat quanto na função criada
+    )  # Testando se os dataframes são igual, tanto no pd.concat quanto na função criada

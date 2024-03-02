@@ -13,7 +13,7 @@ def extranindo_dados_excel(path: str) -> List[pd.DataFrame]:
 
     return: lista de dataframes
     """
-    arquivos = glob.glob(os.path.join(path, '*.xlsx'))
+    arquivos = glob.glob(os.path.join(path, "*.xlsx"))
 
     lista_df = []
 
@@ -23,7 +23,7 @@ def extranindo_dados_excel(path: str) -> List[pd.DataFrame]:
     return lista_df
 
 
-if __name__ == '__main__':
-    path = 'data/input'
+if __name__ == "__main__":
+    path = "data/input"
     lista = extranindo_dados_excel(path)
     print(lista)
