@@ -1,0 +1,34 @@
+site_name: Projeto ETL
+theme:
+  name: material
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-4
+        name: Modo Claro
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-7
+        name: Modo Escuro
+
+  language: pt
+
+repo_name: "luhborba/ProjetoDeETL"
+repo_url: "https://github.com/luhborba/ProjetoDeETL/"
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+  - mermaid2
+
