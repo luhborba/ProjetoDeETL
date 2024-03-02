@@ -69,3 +69,8 @@ task test
 ```bash
 task docs
 ```
+
+## Entre em contato comigo
+[Acesse Meu LinkedIn](https://www.linkedin.com/in/luhborba/)
+
+[Acesse Youtube](https://www.youtube.com/@luhborba)
