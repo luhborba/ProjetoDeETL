@@ -11,9 +11,9 @@ theme:
     # Palette toggle for dark mode
     - scheme: slate
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-7
         name: Modo Escuro
-      
+
   language: pt
 
 repo_name: "luhborba/ProjetoDeETL"

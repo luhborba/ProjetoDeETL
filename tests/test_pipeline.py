@@ -7,7 +7,6 @@ df_2 = pd.DataFrame({"a": [7, 8, 9], "b": [10, 11, 12]})
 
 
 def testar_a_concatenacao_df():
-
     # Gerando Lista de dataframes para teste
     df_list = [df_1, df_2]
     # Concatenando os dataframes para realização de testes
