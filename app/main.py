@@ -1,4 +1,5 @@
 """Script que ira iniciar a rotina de ETL."""
+
 from pipeline.extract import extranindo_dados_excel
 from pipeline.load import load_excel
 from pipeline.trasform import concatenar_df

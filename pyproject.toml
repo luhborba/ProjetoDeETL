@@ -15,8 +15,12 @@ flake8 = "^7.0.0"
 black = "^24.2.0"
 pydocstyle = "^6.3.0"
 pip-audit = "^2.7.2"
+taskipy = "^1.12.2"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+format = "poetry run isort . && poetry run black ."
