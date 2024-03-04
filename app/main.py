@@ -9,3 +9,4 @@ if __name__ == "__main__":
     lista_df = extranindo_dados_excel(path)
     df = concatenar_df(lista_df)
     load_excel(df, "data/output", "output")
+    print("ETL concluído com sucesso!")
