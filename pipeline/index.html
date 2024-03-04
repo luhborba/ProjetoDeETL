@@ -578,61 +578,11 @@
 <a id="app.pipeline.trasform.concatenar_df"></a>
   <div class="doc doc-contents first">
   
-      <p>Concatenates a list of pandas DataFrames into a single DataFrame with the option to ignore the original index and create a new one.</p>
-
-
-
-  <p><strong>Parameters:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-        <th>Default</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td><code>dataframes</code></td>
-          <td>
-                <code><span title="typing.List">List</span>[<span title="pandas.DataFrame">DataFrame</span>]</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>The list of DataFrames to be concatenated.</p>
-            </div>
-          </td>
-          <td>
-              <em>required</em>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-
-
-  <p><strong>Returns:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td>
-                <code><span title="pandas.DataFrame">DataFrame</span></code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>pd.DataFrame: The concatenated DataFrame.</p>
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
+      <p>Concatena a lista de Dataframes e retorna um dataframe unico.</p>
+<p>Args:
+     dataframes (List[pd.DataFrame]): The list of DataFrames to be concatenated.</p>
+<p>Returns:
+     pd.DataFrame: The concatenated DataFrame.</p>
 
           <details class="quote">
             <summary>Source code in <code>app\pipeline\trasform.py</code></summary>
@@ -648,7 +598,7 @@
 <span class="normal">17</span>
 <span class="normal">18</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">concatenar_df</span><span class="p">(</span><span class="n">dataframes</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Concatenates a list of pandas DataFrames into a single DataFrame with the option to ignore the original index and create a new one.</span>
+<span class="sd">   Concatena a lista de Dataframes e retorna um dataframe unico.</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        dataframes (List[pd.DataFrame]): The list of DataFrames to be concatenated.</span>
